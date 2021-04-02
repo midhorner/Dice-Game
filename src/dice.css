@@ -1,0 +1,28 @@
+.Dice {
+  font-size: 14rem;
+  color: rgb(62, 62, 179);
+  margin: 3rem 5rem;
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-5px, 0, 0);
+  }
+
+  20%, 80% {
+    transform: translate3d(10px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-20px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(20px, 0, 0);
+  }
+}
+
+.shaking {
+    animation: shake 1.2s cubic-bezier(.36,.07,.19,.97) both;
+    color: rgb(43, 43, 119);
+}
